@@ -1,0 +1,273 @@
+@use "page_perso";
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    margin: 0px;
+    width: 100%;
+    max-height: 100%;
+   // height:100%;
+    background-color:#0D2C54;
+    color:white;
+  }
+  main{
+   height: 100%;
+   margin:auto;
+  }
+  footer{
+    width: 100%;
+    max-height: 100%;
+  }
+  .button{
+    border-radius:50%;
+    background-color: white;
+    border:none;
+    width: 240px;
+    height: 240px;
+  }
+
+.img_animal{
+width: 200px;
+}
+//Animations
+
+.tortueSprite{
+  width: 500px;
+  height: 500px;
+  background-image: url('sprites/tortue_sprite.png');
+  background-size: cover;
+  background-position: 0 0;
+  animation-name: anim;
+  animation-duration: 3.11s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-timing-function: steps(47);
+  }
+  .requinBlancSprite{
+    width: 500px;
+    height: 500px;
+    background-image: url('sprites/requin_blanc_sprite.png');
+    background-size: cover;
+    background-position: 0 0;
+    animation-name: anim;
+    animation-duration: 3.11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: steps(47);
+  }
+  .vaquitaSprite{
+    width: 500px;
+    height: 500px;
+    background-image: url('sprites/vaquita_sprite.png');
+    background-size: cover;
+    background-position: 0 0;
+    animation-name: anim;
+    animation-duration: 3.11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: steps(47);
+  }
+  .requinBaleineSprite{
+    width: 500px;
+    height: 500px;
+    background-image: url('sprites/requin_baleine_sprite.png');
+    background-size: cover;
+    background-position: 0 0;
+    animation-name: anim;
+    animation-duration: 3.11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: steps(47);
+  }
+  .baleineSprite{
+    width: 500px;
+    height: 500px;
+    background-image: url('sprites/baleine_sprite.png');
+    background-size: cover;
+    background-position: 0 0;
+    animation-name: anim;
+    animation-duration: 3.11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: steps(47);
+  }
+  .thonRougeSprite{
+    width: 500px;
+    height: 500px;
+    background-image: url('sprites/thon_sprite.png');
+    background-size: cover;
+    background-position: 0 0;
+    animation-name: anim;
+    animation-duration: 3.11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: steps(47);
+  }
+  @keyframes anim {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 -23500px;
+    }
+  }
+
+
+  /*Animations
+  .button1{ 
+  background-image: url('sprites/tortue_sprite.png');
+    background-size: cover;
+    background-position: 0 0;
+    animation-name: anim;
+    animation-duration: 3.11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: steps(46);
+  }
+  .button2{ 
+    background-image: url('sprites/requin_blanc_sprite.png');
+      background-size: cover;
+      background-position: 0 0;
+      animation-name: anim;
+      animation-duration: 3.11s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-timing-function: steps(46);
+    }
+    @keyframes anim {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 0 -9200px;
+      }
+    }*/
+
+  .grille{
+    margin:auto;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows:auto auto;
+    gap:50px;
+    //height:100px;
+    justify-content: center;
+  }
+  @media screen and (min-width:1024px){
+    .grille{
+      height:500px;
+    }
+  }
+  h1{
+    text-align: center;
+    font-size: 100px;
+    margin:20px;
+    margin-top: 5px;
+  }
+  //Ajouter la fonte pour tout le text dans la page
+ body {
+    font-family: 'Varela Round', sans-serif;
+   
+  }
+  .modal{
+    margin-right: 200px;
+    background-color:#0D2C54;
+  }
+  .modal-content{
+    width:900px;
+    height: 650px;
+    margin-left:-200px;
+    margin-top:40px;
+    font-family: 'Varela Round', sans-serif;
+  }
+  .close{
+    background-color:#0D2C54;
+    color:white;
+    border-color:#0D2C54;
+    border-radius: 50%;
+    border:none;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+  }
+  .modal-header {
+    border-color: #0D2C54;
+    border-width: 2px;
+  }
+  .x {
+    position:absolute;
+    top:3.5%;
+    left:4.6%;
+  }
+  .contenue{
+    padding-bottom: 20px;
+  }
+  .requin {
+    position:absolute;
+    top:3.5%;
+    left:4.6%;
+   }
+   .thon {
+    position:absolute;
+    top:3.5%;
+    left:4.6%;
+   }
+    /*.buttonThon{
+    width:300px;
+   position:absolute;
+    top:44%;
+    left:62%; 
+   }*/
+   /*.buttonBaleine{
+    width:175px;
+    position:absolute;
+    top:52%;
+    left:43%;                                                                                                                                                                                    
+   }*/
+  .visuels{
+    @include page_perso.visuel;
+  }
+  .titre3{
+    @include page_perso.titre3;
+  }
+  .info{
+    @include page_perso.text;
+    @include page_perso.info;
+  }
+  //.infoT{
+   // @include page_perso.infoT;
+  //}
+  .text{
+    @include page_perso.text;
+  }
+  .revenir{
+    @include page_perso.revenir;
+  }
+  .contenue{
+    @include page_perso.grillePerso;
+  }
+  .img_gros{
+    @include page_perso.img_gros;
+  }
+  .img6{
+    @include page_perso.img6;
+  }
+  .img2{
+    @include page_perso.img2;
+  }
+  .visuels2{
+    @include page_perso.visuels2;
+  }
+  .img3{
+    @include page_perso.img2;
+  }
+  .visuels3{
+    @include page_perso.visuels3;
+  }
+  .arriere_plan{
+    @include page_perso.arriere_plan;
+  }
+  .compagnie{
+    @include page_perso.nom;
+  }
